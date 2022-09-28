@@ -47,6 +47,27 @@
 .time {
   margin-left: 4px;
 }
+.brake-btn {
+  background-color: whitesmoke;
+  height: 60px;
+  display: flex;
+  justify-content: space-around;
+  margin-right: 5px;
+  border-radius: 8px;
+}
+.brake-btn button {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  margin-top: 5%;
+  border: none;
+  color: white;
+  cursor: pointer;
+  background-color: rgb(51, 7, 250);
+}
+.brake-btn button:hover {
+  box-shadow: 4px 4px 10px gray;
+}
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   .list-container {
     background: rgb(219, 200, 200);

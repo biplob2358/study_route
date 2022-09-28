@@ -1,10 +1,20 @@
 import "./CartList.css";
 import dp from "../../images/dp.jpg";
 
-import React from "react";
+import React, { useEffect, useState } from "react";
 
 const CartList = (props) => {
   const { list } = props;
+
+  const brakeHander = (value) => {
+    localStorage.setItem("brakeTime", JSON.stringify(value));
+    setBreak(value);
+  };
+  const [brake, setBreak] = useState(0);
+  useEffect(() => {
+    const times = JSON.parse(localStorage.getItem("brakeTime"));
+    setBreak(times);
+  }, []);
 
   let total = 0;
   for (const course of list) {
@@ -43,13 +53,22 @@ const CartList = (props) => {
         </div>
       </div>
       <h2>Add A Break</h2>
-      <div>
-        <p>Lorem ipsum dolor sit amet.</p>
+      <div className="brake-btn">
+        <button onClick={() => brakeHander("15")}>15</button>
+        <button onClick={() => brakeHander("20")}>20</button>
+        <button onClick={() => brakeHander("25")}>25</button>
+        <button onClick={() => brakeHander("30")}>30</button>
+        <button onClick={() => brakeHander("35")}>35</button>
       </div>
       <h2>Duration Details</h2>
       <div className="total-time">
         <p>
           Total time: <span className="time">{total}</span> Hours
+        </p>
+      </div>
+      <div className="total-time">
+        <p>
+          Break time: <span className="time">{brake}</span> minutes
         </p>
       </div>
     </div>
