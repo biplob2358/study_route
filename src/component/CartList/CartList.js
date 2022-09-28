@@ -1,10 +1,15 @@
 import "./CartList.css";
 import dp from "../../images/dp.jpg";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 import React, { useEffect, useState } from "react";
 
 const CartList = (props) => {
   const { list } = props;
+
+  const notify = () =>
+    toast("Your activity success!", { position: "top-center" });
 
   const brakeHander = (value) => {
     localStorage.setItem("brakeTime", JSON.stringify(value));
@@ -70,6 +75,12 @@ const CartList = (props) => {
         <p>
           Break time: <span className="time">{brake}</span> minutes
         </p>
+      </div>
+      <div>
+        <button onClick={notify} className="btn-activity">
+          Activity Completed
+        </button>
+        <ToastContainer />
       </div>
     </div>
   );
