@@ -2,6 +2,7 @@ import "./Course.css";
 import React from "react";
 
 const Course = (props) => {
+  const { handleAddToList } = props;
   const { name, info, img, time } = props.course;
 
   return (
@@ -14,7 +15,12 @@ const Course = (props) => {
           <span className="time">Time required :</span>
           {time}hour
         </p>
-        <button className="btn-list">Add to list</button>
+        <button
+          onClick={() => handleAddToList(props.course)}
+          className="btn-list"
+        >
+          Add to list
+        </button>
       </div>
     </div>
   );

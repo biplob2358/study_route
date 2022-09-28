@@ -11,11 +11,20 @@ const Main = () => {
       .then((res) => res.json())
       .then((data) => setCourses(data));
   }, []);
+
+  const handleAddToList = (course) => {
+    console.log(course);
+  };
+
   return (
     <div className="main-container">
       <div className="course-container">
         {courses.map((course) => (
-          <Course key={course.id} course={course}></Course>
+          <Course
+            key={course.id}
+            course={course}
+            handleAddToList={handleAddToList}
+          ></Course>
         ))}
       </div>
       <div className="profile-container">
