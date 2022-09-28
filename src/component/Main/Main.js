@@ -2,9 +2,11 @@ import "./Main.css";
 
 import React, { useEffect, useState } from "react";
 import Course from "../Course/Course";
+import CartList from "../CartList/CartList";
 
 const Main = () => {
   const [courses, setCourses] = useState([]);
+  const [list, setList] = useState([]);
 
   useEffect(() => {
     fetch("dataApi.json")
@@ -13,7 +15,9 @@ const Main = () => {
   }, []);
 
   const handleAddToList = (course) => {
-    console.log(course);
+    // console.log(course);
+    const newList = [...list, course];
+    setList(newList);
   };
 
   return (
@@ -28,7 +32,7 @@ const Main = () => {
         ))}
       </div>
       <div className="profile-container">
-        <h1>Cart</h1>
+        <CartList list={list}></CartList>
       </div>
     </div>
   );
