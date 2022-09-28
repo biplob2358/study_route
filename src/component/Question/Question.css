@@ -1,0 +1,6 @@
+.question-container {
+  border: 1px solid gray;
+  margin-bottom: 5px;
+  border-radius: 5px;
+  box-shadow: 4px 4px 10px gray;
+}
