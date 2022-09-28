@@ -46,9 +46,11 @@ const CartList = (props) => {
       <div>
         <p>Lorem ipsum dolor sit amet.</p>
       </div>
-      <h2>Exercise Details</h2>
-      <div>
-        <p>Exercise time:0 Hours</p>
+      <h2>Duration Details</h2>
+      <div className="total-time">
+        <p>
+          Total time: <span className="time">{total}</span> Hours
+        </p>
       </div>
     </div>
   );

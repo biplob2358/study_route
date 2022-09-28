@@ -34,3 +34,23 @@
   font-weight: 600;
   justify-content: space-around;
 }
+.total-time {
+  background-color: rgb(57, 113, 235);
+  color: white;
+  margin: 10px 5px;
+  padding-left: 5px;
+  display: flex;
+  border-radius: 8px;
+  font-size: large;
+  font-weight: 600;
+}
+.time {
+  margin-left: 4px;
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .list-container {
+    background: rgb(219, 200, 200);
+    height: 100%;
+    padding-left: 4px;
+  }
+}
