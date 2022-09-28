@@ -1,0 +1,38 @@
+.course {
+  width: 280px;
+  height: 510px;
+  border: 1px solid gray;
+  border-radius: 8px;
+  box-shadow: 4px 4px 8px gray;
+  padding: 20px;
+  position: relative;
+}
+
+.course img {
+  width: 280px;
+  height: 250px;
+  border-radius: 8px;
+}
+.course-name {
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 25px;
+}
+.time {
+  font-weight: 500;
+}
+.btn-list {
+  width: 80%;
+  height: 40px;
+  background-color: blue;
+  border: none;
+  color: white;
+  font-weight: 700;
+  position: absolute;
+  border-radius: 8px;
+  bottom: 20px;
+  left: 30px;
+}
+.btn-list:hover {
+  background-color: orange;
+}

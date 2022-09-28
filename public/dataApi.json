@@ -1,0 +1,44 @@
+[
+  {
+    "id": 1,
+    "name": "Big Data and IoT",
+    "info": "IoT and Big Data are two independent technologies that are inseparable from each other, to enable well-known technological advances",
+    "img": "https://www.whizlabs.com/blog/wp-content/uploads/2018/07/iot-and-big-data.png",
+    "time": 1
+  },
+  {
+    "id": 2,
+    "name": "Web Engineering",
+    "info": "What do you mean by Web engineering?Web Engineering is the application of systematic, disciplined and quantifiable approaches to development, operation, and maintenance of Web-based applications.",
+    "img": "https://i.ytimg.com/vi/UAp51tuxg_I/maxresdefault.jpg",
+    "time": 1
+  },
+  {
+    "id": 3,
+    "name": "Compiler Design",
+    "info": "Compiler design principles provide an in-depth view of translation and optimization process. Compiler design covers basic translation mechanism and error detection & recovery. ",
+    "img": "https://i.ytimg.com/vi/5ZmFlxrNaN8/maxresdefault.jpg",
+    "time": 1
+  },
+  {
+    "id": 4,
+    "name": "Pervasive Computing",
+    "info": "Pervasive Computing is also called as Ubiquitous computing, and it is the new trend toward embedding everyday objects with microprocessors so that they can communicate information. It refers to the presence of computers in common objects found all around us so that people are unaware of their presence",
+    "img": "https://i.ytimg.com/vi/eIUQjpyNMBE/maxresdefault.jpg",
+    "time": 1
+  },
+  {
+    "id": 5,
+    "name": "Data Structure",
+    "info": "A data structure is a specialized format for organizing, processing, retrieving and storing data. There are several basic and advanced types of data structures, all designed to arrange data to suit a specific purpose.",
+    "img": "https://www.techyloud.com/wp-content/uploads/2022/02/Data-Structure-assignement.jpg",
+    "time": 1
+  },
+  {
+    "id": 6,
+    "name": "Discrete Mathematics",
+    "info": "Discrete mathematics is the branch of mathematics dealing with objects that can consider only distinct, separated values. This tutorial includes the fundamental concepts of Sets, Relations and Functions",
+    "img": "https://media.geeksforgeeks.org/wp-content/cdn-uploads/20220504172515/Discrete-Mathematics-Tutorial.jpg",
+    "time": 1
+  }
+]
