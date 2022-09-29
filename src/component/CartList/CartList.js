@@ -7,19 +7,24 @@ import React, { useEffect, useState } from "react";
 
 const CartList = (props) => {
   const { list } = props;
+  const [breakTime, setTimeBreak] = useState(0);
 
   const notify = () =>
     toast("Your activity success!", { position: "top-center" });
 
-  const brakeHander = (value) => {
-    localStorage.setItem("brakeTime", JSON.stringify(value));
-    setBreak(value);
-  };
-  const [brake, setBreak] = useState(0);
   useEffect(() => {
-    const times = JSON.parse(localStorage.getItem("brakeTime"));
-    setBreak(times);
-  }, []);
+    const brkTime = localStorage.getItem("brakeTime");
+    if (brkTime) {
+      setTimeBreak(JSON.parse(brkTime));
+    } else {
+      setTimeBreak(breakTime);
+    }
+  }, [breakTime]);
+
+  const brakeHander = (breakTime) => {
+    localStorage.setItem("brakeTime", JSON.stringify(breakTime));
+    setTimeBreak(breakTime);
+  };
 
   let total = 0;
   for (const course of list) {
@@ -73,7 +78,7 @@ const CartList = (props) => {
       </div>
       <div className="total-time">
         <p>
-          Break time: <span className="time">{brake}</span> minutes
+          Break time: <span className="time">{breakTime}</span> Minutes
         </p>
       </div>
       <div>
